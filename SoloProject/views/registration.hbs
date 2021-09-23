@@ -1,0 +1,79 @@
+<script defer src='/js/RegScript.js'></script>
+
+<div class='container'>
+  <div class='tablicka' style='width:  30%;'>
+    <form name='myForm' class='row g-3 needs-validation' novalidate>
+      <div class='col-md-4'>
+        <label for='validationCustom01' class='form-label'>Name</label>
+        <input
+          data-name
+          type='text'
+          name='name'
+          class='form-control'
+          id='validationCustom01'
+          placeholder="name"
+          required
+        />
+      </div>
+
+      <div class='col-md-4'>
+        <label for='validationCustomUsername' class='form-label'>Email</label>
+        <div class='input-group has-validation'>
+          <span class='input-group-text' id='inputGroupPrepend'>@</span>
+          <input
+            data-email
+            type='text'
+            name='email'
+            placeholder="myMail@mail.com"
+            class='form-control'
+            id='validationCustomUsername'
+            aria-describedby='inputGroupPrepend'
+            required
+          />
+
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <label for='validationCustom01' class='form-label'>Telegram</label>
+        <input
+          data-name
+          type='text'
+          name='telegram'
+          class='form-control'
+          id='validationCustom01'
+          placeholder="@Danila"
+          required
+        />
+      </div>
+      <div class='col-md-4'>
+        <label for='validationCustom03' class='form-label'>Password</label>
+        <input
+          data-password
+          type='password'
+          name='password'
+          class='form-control'
+          placeholder="************"
+          id='validationCustom03'
+          required
+        />
+
+      </div>
+
+      <div class='col-12'>
+        <button class='btn btn-primary' type='submit'>Submit form</button>
+      </div>
+      <p
+        data-reg
+        style='color: #86141d;
+    font-weight: bold;
+    background: #f9f3cb73;
+    border-radius: 5px;'
+      ></p>
+    </form>
+  </div>
+</div>
+<style>
+  .container{ display: flex; justify-content: center; align-items: center; width:
+  100%; } .col-md-4 { flex: 0 0 auto; width: 100%; } .row{ width:100% }.form-label{
+  color: #810200 } .btn-primary{ background-color :#810000; border-color:#810000 }
+</style>

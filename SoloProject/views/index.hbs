@@ -1,0 +1,65 @@
+<script defer src='/js/application.js'></script>
+
+<div class='container-map'>
+
+  <div id='map' style='width: 750px; height: 470px'></div>
+</div>
+
+  <div
+    class='modal fade'
+    id='staticBackdrop'
+    data-bs-backdrop='static'
+    data-bs-keyboard='false'
+    tabindex='-1'
+    aria-labelledby='staticBackdropLabel'
+    aria-hidden='true'
+  >
+    <div class='modal-dialog'>
+      <div class='modal-content'>
+<form name='modalForm'>
+        <div class='modal-header'>
+          <h5 class='modal-title' id='staticBackdropLabel'>Событие</h5>
+          <button
+            type='button'
+            class='btn-close'
+            data-bs-dismiss='modal'
+            aria-label='Close'
+          ></button>
+        </div>
+        <div class='modal-body'>
+          <div id='form' class='mb-3'>
+            <label for='exampleFormControlInput1' class='form-label'>Название события</label>
+            <input
+              type='text'
+              name='title'
+              class='form-control'
+              id='exampleFormControlInput1'
+              placeholder='title'
+            />
+          </div>
+          <div class='mb-3'>
+            <label
+              for='exampleFormControlTextarea1'
+              class='form-label'
+            >Описание</label>
+            <input
+              type='text'
+              name="text"
+              class='form-control'
+              id='exampleFormControlTextarea1'
+              rows='3'
+            /></div>
+        </div>
+        <div class='modal-footer'>
+          <button
+            type='button'
+            class='btn btn-secondary'
+            data-bs-dismiss='modal'
+          >Close</button>
+          <button type='submit' data-add class='btn btn-primary'>Add</button>
+        </div>
+</form>
+      </div>
+    </div>
+  </div>
+
